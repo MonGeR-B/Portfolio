@@ -6,6 +6,8 @@ import Services from "./sections/Services";
 import { ReactLenis, useLenis } from 'lenis/react'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import About from "./sections/About";
+import Works from "./sections/Works";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +18,8 @@ const App = () => {
       <Hero />
       <ServicesSummary />
       <Services />
+      <About />
+      <Works />
     </ReactLenis>
   );
 };
