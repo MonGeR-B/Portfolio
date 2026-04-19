@@ -60,17 +60,17 @@ const Navbar = () => {
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
-        const handelScroll = () => {
+        const handleScroll = () => {
             const currentScrollY = window.scrollY;
 
             setShowBurger(currentScrollY <= lastScrollY || currentScrollY < 10);
 
             lastScrollY = currentScrollY;
         };
-        window.addEventListener("scroll", handelScroll, {
+        window.addEventListener("scroll", handleScroll, {
             passive: true,
         });
-        return () => window.removeEventListener("scroll", handelScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     const toggleMenu = () => {
