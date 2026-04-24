@@ -30,7 +30,7 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="flex flex-col justify-between min-h-screen bg-black"
+            className="relative z-10 flex flex-col justify-between min-h-screen bg-black"
         >
             <div>
                 <AnimatedHeaderSection
